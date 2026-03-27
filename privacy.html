@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности — ReddyRoad</title>
+    <style>
+        :root {
+            --primary-green: #57CC02;
+            --dark-bg: #2F2F36;
+            --light-gray: #f4f7f6;
+            --text-color: #3c3c3c;
+        }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #fff;
+        }
+        h1 { color: var(--primary-green); border-bottom: 3px solid var(--primary-green); padding-bottom: 15px; font-size: 2.2em; }
+        h2 { color: var(--dark-bg); margin-top: 35px; border-left: 5px solid var(--primary-green); padding-left: 15px; font-size: 1.5em; }
+        h3 { color: var(--dark-bg); margin-top: 20px; font-size: 1.2em; }
+        p { margin-bottom: 15px; }
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+        .update-date { font-style: italic; color: #777; margin-bottom: 30px; }
+        .contact-box { 
+            background: var(--light-gray); 
+            padding: 25px; 
+            border-radius: 15px; 
+            margin-top: 40px; 
+            border: 1px solid #e0e0e0;
+        }
+        .highlight { font-weight: bold; color: var(--dark-bg); }
+        a { color: var(--primary-green); text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Политика конфиденциальности</h1>
+    <p class="update-date">Последнее обновление: 27 марта 2026 г.</p>
+
+    <p>В <strong>ReddyRoad</strong> мы заботимся о вашей личной информации. Мы подготовили эту Политику конфиденциальности, чтобы объяснить, как мы собираем, используем и защищаем ваши данные при использовании нашего мобильного приложения и связанных сервисов.</p>
+
+    <h2>1. Информация, которую мы собираем</h2>
+    <p>Для обеспечения работы тренажера ПДД и синхронизации вашего прогресса, мы собираем следующие данные:</p>
+    
+    <h3>а. Регистрация и профиль</h3>
+    <ul>
+        <li><span class="highlight">Идентификаторы:</span> Уникальный ID пользователя (UUID), генерируемый сервисом Supabase, и ваше имя пользователя (username).</li>
+        <li><span class="highlight">Настройки профиля:</span> Выбранные вами косметические улучшения, такие как ID текущего автомобиля (<code style="background:#eee; padding:2px 5px;">current_car_id</code>) и фонового изображения (<code style="background:#eee; padding:2px 5px;">current_bg_id</code>).</li>
+    </ul>
+
+    <h3>б. Прогресс и аналитика обучения</h3>
+    <p>Чтобы обучение было эффективным, мы сохраняем данные о вашей активности:</p>
+    <ul>
+        <li>Статистика ответов (правильные/неправильные, общее количество решенных задач).</li>
+        <li><span class="highlight">Аналитика времени:</span> Среднее время ответа (<code style="background:#eee; padding:2px 5px;">avg_response_time</code>) и лучшее время на экзамене.</li>
+        <li><span class="highlight">Ошибки:</span> Темы, в которых вы чаще всего допускаете ошибки (<code style="background:#eee; padding:2px 5px;">mistake_topics</code>), для их последующей проработки.</li>
+        <li><span class="highlight">Игровые показатели:</span> Опыт (XP), уровень прогресса, текущая серия дней (streak) и количество «жизней».</li>
+    </ul>
+
+    <h2>2. Как мы обрабатываем вашу информацию</h2>
+    <p>ReddyRoad обрабатывает данные для следующих целей:</p>
+    <ul>
+        <li><span class="highlight">Предоставление сервиса:</span> Сохранение достижений, начисление наград и синхронизация между устройствами.</li>
+        <li><span class="highlight">Улучшение продукта:</span> Анализ того, какие темы ПДД являются наиболее сложными, для корректировки алгоритмов обучения.</li>
+        <li><span class="highlight">Персонализация:</span> Подбор вопросов на основе ваших предыдущих ошибок.</li>
+    </ul>
+
+    <h2>3. Сторонние сервисы</h2>
+    <p>Мы сотрудничаем с надежными поставщиками услуг для работы приложения:</p>
+    <ul>
+        <li><strong>Supabase:</strong> Облачная инфраструктура для хранения базы данных и аутентификации.</li>
+        <li><strong>Рекламные сети (Yandex Ads / VK Ads):</strong> Могут использоваться для предоставления вознаграждений за просмотр рекламы (Rewarded Video). Эти сети могут собирать анонимные рекламные идентификаторы устройств.</li>
+    </ul>
+
+    <h2>4. Ваши права</h2>
+    <p>Вы имеете право:</p>
+    <ul>
+        <li>Запросить копию данных, которые мы храним о вас.</li>
+        <li>Потребовать исправления неверной информации.</li>
+        <li><span class="highlight">Удалить аккаунт:</span> Вы можете полностью удалить свой профиль и все связанные с ним данные через настройки приложения. При удалении аккаунта все записи в таблицах прогресса будут безвозвратно стерты.</li>
+    </ul>
+
+    <h2>5. Хранение данных</h2>
+    <p>Мы храним вашу личную информацию до тех пор, пока ваш аккаунт активен. Если вы не используете приложение более 24 месяцев, мы оставляем за собой право архивировать или удалить ваш прогресс.</p>
+
+    <div class="contact-box">
+        <h2>6. Связаться с нами</h2>
+        <p>По любым вопросам, связанным с конфиденциальностью данных, вы можете написать разработчику напрямую:</p>
+        <p><strong>Email проекта:</strong> <a href="mailto:reddyroaddev@gmail.com">reddyroaddev@gmail.com</a></p>
+    </div>
+
+</body>
+</html>
