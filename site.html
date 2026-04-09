@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReddyRoad — Твой путь к правам без скуки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-grad: linear-gradient(90deg, #F2524D 0%, #C52F70 100%);
+            --dark-bg: #1e1e1e;
+            --text-light: #ffffff;
+            --card-bg: #2d2d2e;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 1px solid #3d3d3e;
+        }
+
+        .logo-area {
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: var(--primary-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .mascot-circle {
+            width: 120px;
+            height: 120px;
+            background: #ffb5b5; 
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        h1 { font-size: 1.5rem; margin-bottom: 10px; }
+        p { color: #b0b0b0; line-height: 1.6; margin-bottom: 30px; }
+
+        .btn {
+            display: block;
+            background: var(--primary-grad);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(242, 82, 77, 0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: #3d3d3e;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.7rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-area">ReddyRoad</div>
+    
+    <div class="mascot-circle">
+        <img src="reddy.png" alt="Reddy Mascot" style="width: 80%; height: auto;">
+    </div>
+
+    <h1>Учи ПДД играя!</h1>
+    <p>Забудь про скучные учебники. Проходи уровни вместе с Редди, соревнуйся с друзьями и подготовься к экзамену в ГАИ на 100%.</p>
+
+    <a href="#" class="btn">Скачать в RuStore</a>
+    
+
+    <div class="features">
+        <div class="feature-item">🔥 Стрики дней</div>
+        <div class="feature-item">🎮 Геймификация</div>
+        <div class="feature-item">📊 Статистика</div>
+        <div class="feature-item">🏆 Кастомизация</div>
+    </div>
+
+    <footer>
+        &copy; 2026 ReddyRoad Development<br>
+        Сделано с любовью к ПДД и чистому коду
+    </footer>
+</div>
+
+</body>
+</html>
