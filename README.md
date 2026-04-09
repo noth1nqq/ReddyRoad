@@ -1,5 +1,5 @@
 ## Главный сайт
-* [Политика конфиденциальности](https://noth1nqq.github.io/ReddyRoad/site.html)
+* [Сайт-визитка](https://noth1nqq.github.io/ReddyRoad/site.html)
 
 ## Юридическая информация
 * [Политика конфиденциальности](https://noth1nqq.github.io/ReddyRoad/privacy.html)
